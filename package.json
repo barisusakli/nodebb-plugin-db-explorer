@@ -1,0 +1,29 @@
+{
+  "name": "nodebb-plugin-db-explorer",
+  "version": "1.0.0",
+  "description": "A Plugin that lets you explore keys in a NodeBB database",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/barisusakli/nodebb-plugin-db-explorer"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "database"
+  ],
+  "author": "Baris Usakli <baris@designcreateplay.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "7.6.0",
+    "eslint-config-airbnb-base": "14.1.0",
+    "eslint-plugin-import": "2.21.1"
+  },
+  "nbbpm": {
+    "compatibility": "^1.15.0"
+  }
+}

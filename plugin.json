@@ -1,0 +1,12 @@
+{
+    "library": "./index.js",
+    "hooks": [
+        { "hook": "static:app.load", "method": "init"},
+        { "hook": "filter:admin.header.build", "method": "admin.menu" }
+    ],
+    "modules": {
+        "../admin/plugins/db-explorer.js": "./public/db-explorer.js"
+    },
+    "templates": "./public/templates",
+    "settingsRoute": "/admin/plugins/db-explorer"
+}

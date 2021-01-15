@@ -11,7 +11,6 @@ dbExplorer.init = async function (params) {
 };
 
 async function renderAdmin(req, res) {
-	console.log(req.query);
 	const data = await get(req.query);
 	res.render('admin/plugins/db-explorer', {
 		result: {

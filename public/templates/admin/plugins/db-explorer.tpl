@@ -3,25 +3,25 @@
 		<form class="form">
 			<div class="form-group">
 				<label>Key</label>
-				<input id="keyName" type="text" class="form-control" placeholder="Key Name" value="{result.key}">
+				<input id="keyName" type="text" class="form-control" placeholder="Key Name">
 			</div>
 			<button class="btn btn-primary" id="get">Get</button>
 			<p class="help-block">Following inputs apply to sorted sets and are optional</p>
 			<div class="form-group">
 				<label>Start</label>
-				<input id="start" type="text" class="form-control" placeholder="Optional" value="{result.start}">
+				<input id="start" type="text" class="form-control" placeholder="Optional">
 			</div>
 			<div class="form-group">
 				<label>Stop</label>
-				<input id="stop" type="text" class="form-control" placeholder="Optional" value="{result.stop}">
+				<input id="stop" type="text" class="form-control" placeholder="Optional">
 			</div>
 			<div class="form-group">
 				<label>Min</label>
-				<input id="min" type="text" class="form-control" placeholder="Optional" value="{result.min}">
+				<input id="min" type="text" class="form-control" placeholder="Optional">
 			</div>
 			<div class="form-group">
 				<label>Max</label>
-				<input id="max" type="text" class="form-control" placeholder="Optional" value="{result.max}">
+				<input id="max" type="text" class="form-control" placeholder="Optional">
 			</div>
 			<div class="form-group">
 				<label>With Scores</label>
@@ -36,7 +36,7 @@
 	</div>
 	<div class="col-md-9 results">
 		<div class="template hidden">
-			Key: <strong><span id="key">{result.type}</span></strong>
+			Key: <strong><span id="key"></span></strong>
 			Type: <strong><span id="type">{result.type}</span></strong>
 			<pre class="output" style="max-height: 600px; overflow: auto; white-space: break-spaces;">{result.value}</pre>
 		</div>

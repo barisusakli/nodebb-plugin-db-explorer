@@ -14,7 +14,6 @@ async function renderAdmin(req, res) {
 	const data = await get(req.query);
 	res.render('admin/plugins/db-explorer', {
 		result: {
-			key: req.query.key,
 			type: data.type,
 			value: JSON.stringify(data.value, null, 4),
 		},
@@ -108,7 +107,7 @@ dbExplorer.admin = {};
 dbExplorer.admin.menu = async function (menu) {
 	menu.plugins.push({
 		route: '/plugins/db-explorer',
-		icon: 'fa-hdd-0',
+		icon: 'fa-hdd-o',
 		name: 'DB Explorer',
 	});
 	return menu;

@@ -1,8 +1,6 @@
 
 'use strict';
 
-/* globals define, $, config, app */
-
 define('admin/plugins/db-explorer', function () {
 	var dbExplorer = {};
 

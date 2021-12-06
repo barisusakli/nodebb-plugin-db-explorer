@@ -1,7 +1,7 @@
 
 'use strict';
 
-define('admin/plugins/db-explorer', [alerts], function (alerts) {
+define('admin/plugins/db-explorer', ['alerts'], function (alerts) {
 	var dbExplorer = {};
 
 	dbExplorer.init = function () {

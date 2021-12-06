@@ -1,7 +1,7 @@
 
 'use strict';
 
-define('admin/plugins/db-explorer', function () {
+define('admin/plugins/db-explorer', [alerts], function (alerts) {
 	var dbExplorer = {};
 
 	dbExplorer.init = function () {
@@ -28,7 +28,7 @@ define('admin/plugins/db-explorer', function () {
 					el.find('.output').text(response.result.value);
 				},
 				error: function () {
-					app.alertError('Error loading data');
+					alerts.error('Error loading data');
 				},
 			});
 			return false;

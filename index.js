@@ -7,7 +7,7 @@ const routeHelpers = require.main.require('./src/routes/helpers');
 const dbExplorer = module.exports;
 
 dbExplorer.init = async function (params) {
-	routeHelpers.setupAdminPageRoute(params.router, '/admin/plugins/db-explorer', params.middleware, [], renderAdmin);
+	routeHelpers.setupAdminPageRoute(params.router, '/admin/plugins/db-explorer', renderAdmin);
 };
 
 async function renderAdmin(req, res) {

@@ -17,6 +17,7 @@ async function renderAdmin(req, res) {
 			type: data.type,
 			value: JSON.stringify(data.value, null, 4),
 		},
+		title: 'DB Explorer',
 	});
 }
 

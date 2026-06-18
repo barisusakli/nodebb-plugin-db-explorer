@@ -2,11 +2,18 @@
 'use strict';
 
 define('admin/plugins/db-explorer', ['alerts'], function (alerts) {
-	var dbExplorer = {};
+	const dbExplorer = {};
 
 	dbExplorer.init = function () {
+		$('#keyName').on('keydown', function (event) {
+			if (event.key === 'Enter') {
+				event.preventDefault();
+				$('#get').trigger('click');
+			}
+		});
+
 		$('#get').on('click', function () {
-			var data = {
+			const data = {
 				key: $('#keyName').val(),
 				start: $('#start').val(),
 				stop: $('#stop').val(),
@@ -20,7 +27,7 @@ define('admin/plugins/db-explorer', ['alerts'], function (alerts) {
 				type: 'get',
 				data: data,
 				success: function (response) {
-					var el = $('.template').clone();
+					const el = $('.template').clone();
 					el.removeClass('template').removeClass('hidden');
 					$('.results').prepend(el);
 					el.find('#type').text(response.result.type);

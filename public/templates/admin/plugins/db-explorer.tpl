@@ -4,15 +4,16 @@
 			<h4 class="fw-bold tracking-tight mb-0">{title}</h4>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-md-3">
-			<form class="form">
-				<label class="form-label">Key</label>
-				<div class="mb-3 d-flex gap-1 align-items-center">
-					<input id="keyName" type="text" class="form-control">
-					<button class="btn btn-primary" id="get">Get</button>
-				</div>
-
+	<div class="">
+		<div>
+			<label class="form-label">Key</label>
+			<div class="mb-3 d-flex gap-1 align-items-center">
+				<input id="keyName" type="text" class="form-control">
+				<button class="btn btn-primary" id="get">Get</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
 				<p class="form-text">Following inputs apply to sorted sets and are optional</p>
 				<div class="mb-3">
 					<label class="form-label">Start</label>
@@ -38,14 +39,13 @@
 					<input id="count" type="checkbox" class="form-check-input">
 					<label class="form-check-label">Count</label>
 				</div>
-			</form>
-
-		</div>
-		<div class="col-md-9 results">
-			<div class="template hidden">
-				Key: <strong><span id="key"></span></strong>
-				Type: <strong><span id="type">{result.type}</span></strong>
-				<pre class="output" style="max-height: 600px; overflow: auto; white-space: break-spaces;">{result.value}</pre>
+			</div>
+			<div class="col-md-9 results border rounded">
+				<div class="template hidden p-2">
+					Key: <strong><span id="key"></span></strong>
+					Type: <strong><span id="type">{result.type}</span></strong>
+					<pre class="output" style="max-height: 600px; overflow: auto; white-space: break-spaces;">{result.value}</pre>
+				</div>
 			</div>
 		</div>
 	</div>
